@@ -36,6 +36,7 @@ const SCloseIcon = styled.div`
 
 const CurrencySingleItem = (props) => {
   const { click, currencyName } = props;
+
   return (
     <SCurrencySingleInput onClick={click}>
       <SCloseIcon>

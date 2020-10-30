@@ -11,6 +11,7 @@ const SCheckbox = styled.label`
 
 const CurrencySingleSelect = (props) => {
   const { id, name, handleChange, checked } = props;
+
   return (
     <SCheckbox htmlFor={id}>
       <input
