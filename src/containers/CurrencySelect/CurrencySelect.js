@@ -15,7 +15,7 @@ const SCurrencySelectGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
 `;
 
-const CurrencySelect = (props) => {
+const CurrencySelect = () => {
   const [currencies] = useState([
     { id: 1, name: "EUR" },
     { id: 2, name: "EGP" },
@@ -52,6 +52,7 @@ const CurrencySelect = (props) => {
     setCheckboxValues(value);
   };
 
+  // uncheck the checkbox according to element index
   const unCheck = (i) => {
     let value = checkboxValues.slice();
     value[i] = !value[i];
